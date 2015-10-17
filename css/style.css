@@ -1,5 +1,6 @@
 html
 {
+  font-size: 1em;
   font-family: "Roboto", sans-serif;
 }
 
@@ -13,13 +14,28 @@ p, h1
   font-size: 15px;
 }
 
-#Title
+#header
 {
-  font-size: 8vw;
+  background-color: #ffffff;
+  font-size: 10vmin;
   position: absolute;
-  top: 20%;
-  left: 0%;
+  padding-top: 2vh;
+  left: 0;
+  top:0;
+  right: 0;
+  height: 14vh;
+  min-height: 40px;
+  min-width: 50vw;
   width: 100%;
+  text-align: center;
+}
+
+#nav
+{
+  font-size: 200%;
+  position: absolute;
+  margin-top: 30%;
+  width: 25%;
   height: 20%;
   text-align: center;
 }
