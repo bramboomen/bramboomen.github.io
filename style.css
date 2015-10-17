@@ -1,1 +1,25 @@
-p { font-size: 80px; }
+html
+{
+  font-family: "Roboto", sans-serif;
+}
+
+body
+{
+  background-color: #00BCD4;
+}
+
+p, h1
+{
+  font-size: 15px;
+}
+
+#Title
+{
+  font-size: 8vw;
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  width: 100%;
+  height: 20%;
+  text-align: center;
+}
