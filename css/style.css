@@ -1,6 +1,6 @@
 html
 {
-  font-size: 1em;
+  font-size: 16px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -17,15 +17,13 @@ p, h1
 #header
 {
   background-color: #ffffff;
-  font-size: 10vmin;
+  font-size: 5em;
   position: absolute;
-  padding-top: 2vh;
+  padding-top: 10px;
   left: 0;
   top:0;
   right: 0;
-  height: 14vh;
-  min-height: 40px;
-  min-width: 50vw;
+  height: 100px;
   width: 100%;
   text-align: center;
 }
@@ -38,4 +36,20 @@ p, h1
   width: 25%;
   height: 20%;
   text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+  #header
+  {
+    font-size: 5em;
+    height: 100px
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px) {
+  #header
+  {
+    font-size: 5em;
+    height: 200px;
+  }
 }
