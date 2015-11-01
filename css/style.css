@@ -1,6 +1,6 @@
 html
 {
-  font-size: 16px;
+  font-size: 100%;
   font-family: "Roboto", sans-serif;
 }
 
@@ -11,13 +11,13 @@ body
 
 p, h1
 {
-  font-size: 15px;
+  font-size: 100%;
 }
 
 .header
 {
   background-color: #ffffff;
-  font-size: 80px;
+  font-size: 5em;
   position: absolute;
   padding-top: 10px;
   left: 0;
