@@ -16,12 +16,8 @@ p, h1
 
 .header
 {
-  background-color: #ffffff;
-<<<<<<< HEAD
+  background-color: #ffffff
   font-size: 4em;
-=======
-  font-size: 5em;
->>>>>>> a47ca3431687e97fb3bf7b23aaa4439ecbecedd5
   position: absolute;
   padding-top: 10px;
   left: 0;
