@@ -17,7 +17,7 @@ p, h1
 .header
 {
   background-color: #ffffff;
-  font-size: 5em;
+  font-size: 80px;
   position: absolute;
   padding-top: 10px;
   left: 0;
@@ -51,7 +51,7 @@ p, h1
   }
 }
 
-@media screen and (min-width: 650px) and (max-width: 900px) {
+@media screen and (min-device-width: 650px) and (max-device-width: 900px) {
   #headershort
   {
     display: inline-block;
@@ -64,7 +64,7 @@ p, h1
   }
 }
 
-@media screen and (min-width: 200px) and (max-width: 650px) {
+@media screen and (min-device-width: 200px) and (max-device-width: 650px) {
   #headerlong
   {
     display: none;
