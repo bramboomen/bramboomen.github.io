@@ -14,7 +14,7 @@ p, h1
   font-size: 15px;
 }
 
-#header
+.header
 {
   background-color: #ffffff;
   font-size: 5em;
@@ -39,22 +39,34 @@ p, h1
 }
 
 @media screen and (min-width: 900px) {
-  #header
+  #headershort
   {
+    display: inline-block;
+  }
 
+  #headerlong
+  {
+    font-size: 0.9em;
+    display: inline-block;
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 900px) {
-  #header
+@media screen and (min-width: 650px) and (max-width: 900px) {
+  #headershort
   {
+    display: inline-block;
+  }
 
+  #headerlong
+  {
+    font-size: 0.6em;
+    display: inline-block;
   }
 }
 
-@media screen and (min-width: 200px) and (max-width: 500px) {
-  #header
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  #headerlong
   {
-
+    display: none;
   }
 }
