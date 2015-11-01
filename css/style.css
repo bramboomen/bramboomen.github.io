@@ -17,7 +17,7 @@ p, h1
 .header
 {
   background-color: #ffffff;
-  font-size: 80px;
+  font-size: 4em;
   position: absolute;
   padding-top: 10px;
   left: 0;
@@ -26,6 +26,16 @@ p, h1
   height: auto;
   width: 100%;
   text-align: center;
+}
+
+#headershort
+{
+  display: inline-block;
+}
+
+#headerlong
+{
+  display: inline-block;
 }
 
 #nav
@@ -38,35 +48,53 @@ p, h1
   text-align: center;
 }
 
-@media screen and (min-width: 900px) {
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
   #headershort
   {
+    font-size: 0.75em;
     display: inline-block;
   }
 
   #headerlong
   {
-    font-size: 0.9em;
+    font-size: 0.65em;
     display: inline-block;
   }
 }
 
-@media screen and (min-device-width: 650px) and (max-device-width: 900px) {
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
   #headershort
   {
-    display: inline-block;
+    font-size: 1em;
   }
 
-  #headerlong
-  {
-    font-size: 0.6em;
-    display: inline-block;
-  }
-}
-
-@media screen and (min-device-width: 200px) and (max-device-width: 650px) {
   #headerlong
   {
     display: none;
+  }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+  #headershort
+  {
+    font-size: 1em;
+  }
+
+  #headerlong
+  {
+     display: none;
   }
 }
