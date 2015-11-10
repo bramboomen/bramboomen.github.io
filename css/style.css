@@ -7,6 +7,7 @@ html
 body
 {
   background-color: white;
+  margin: 0;
 }
 
 p, h1
@@ -14,18 +15,46 @@ p, h1
   font-size: 1em;
 }
 
+menuribbon
+{
+    display: block;
+    background-color: #0097A7;
+    width: 100%;
+    height: 50px;
+    padding-left: 10%;
+    
+    box-shadow: 0px 0px 4px black;
+}
+
 ribbon
 {
+    display: block;
     background-color: #00BCD4;
-    font-size: 4em;
-    position: absolute;
-    left: 0;
-    top:0;
-    right: 0;
-    height: 40%;
+    height: 70px;
     width: 100%;
+}
+
+menuribbon a
+{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    width: auto;
+    padding-right: 3%;
+    height: 50px;
+    line-height: 50px;
     text-align: center;
-    z-index: 1;
+}
+
+
+#cvk {display: none;}
+#cvl {display: visible;}
+
+main
+{
+    height: 3000px;
+    padding-top: 10px;
+    padding-left: 10%;
 }
 
 card
@@ -45,15 +74,12 @@ card
 
 .header
 {
-    font-size: 3.5em;
-    position: absolute;
+    font-size: 3em;
+    margin-left: 10%;
+    text-align: left;
+    height 50px;
     padding-top: 10px;
-    left: 0;
-    top: 100px;
-    right: 0;
-    height: auto;
-    width: 100%;
-    text-align: center;
+    padding-bottom: 10px;
     z-index: 10;
 }
 
@@ -69,23 +95,12 @@ card
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-  card
-  {
-    width: 80%;
-    left: 10%;
-    right: 10%;
-  }
+
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
-  card
-  {
-    width: 90%;
-    left: 5%;
-    right: 5%;
-  }
 }
 
 /* Small Devices, Tablets */
@@ -95,33 +110,32 @@ card
   { 
     display: none;
   }
+  
+  menu
+  {
+    
+  }
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
-  ribbon
-  {
-    height: 80px;
-  }
 
-  card
-  {
-    width: 100%;
-    left: 0;
-    right: 0;
-    border-radius: 0;
-    box-shadow: none;
-  }
-  
-  .header
-  {
-    top: 0;
-  }
-  
-  #headerlong
-  {
-    display: none;
-  }
+menuribbon
+{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+menuribbon a
+{
+  display: inline-block;
+  justify-content: center;
+  padding-right: 0;
+  padding-left: 0;
+  width: 22%;
+}
+
+#cvl {display: none;}
+#cvk {display: inline-block;}
   
 }
 
