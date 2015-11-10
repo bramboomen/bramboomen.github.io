@@ -36,6 +36,12 @@ ribbon
     padding-left: 35%;
 }
 
+ribbon.menuplaceholder
+{
+  height: 50px;
+  visibility: hidden;
+}
+
 #profilepic
 {
   float: left;
@@ -66,10 +72,18 @@ menuribbon a
 main
 {
     height: 3000px;
-    padding-top: 60px;
+    padding-top: 0px;
     margin-left: -100px;
     padding-left: 30%;
     padding-right: 30%;
+}
+
+.anchor:before
+{
+   content: "";
+   display: block;
+   height: 70px;
+   margin: -30px 0 0;
 }
 
 card
