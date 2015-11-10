@@ -19,6 +19,7 @@ menuribbon
 {
     display: block;
     position: absolute;
+    top: 210px;
     background-color: #0097A7;
     width: 65%;
     height: 50px;
@@ -71,8 +72,9 @@ menuribbon a
 
 main
 {
+    display: block;
     height: 3000px;
-    padding-top: 0px;
+    padding-top: 50px;
     margin-left: -100px;
     padding-left: 30%;
     padding-right: 30%;

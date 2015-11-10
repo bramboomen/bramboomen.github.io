@@ -9,6 +9,8 @@ $(function() {
 			$('menuribbon').css({ 'position': 'fixed', 'top':0});
 		} else {
 			$('menuribbon').css({ 'position': 'absolute', 'top':210}); 
-		}   
+		}
+		
+		(window).scroll();
 	});
 });
