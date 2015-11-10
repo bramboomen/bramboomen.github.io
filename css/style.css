@@ -1,100 +1,131 @@
 html
 {
-  font-size: 100%;
+  font-size: 16px;
   font-family: "Roboto", sans-serif;
 }
 
 body
 {
-  background-color: #00BCD4;
+  background-color: white;
 }
 
 p, h1
 {
-  font-size: 100%;
+  font-size: 1em;
+}
+
+ribbon
+{
+    background-color: #00BCD4;
+    font-size: 4em;
+    position: absolute;
+    left: 0;
+    top:0;
+    right: 0;
+    height: 40%;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+card
+{
+    position: absolute;
+    width: 960px;
+    height: 1000px;
+    top: 80px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px grey;
+    z-index: 2;
 }
 
 .header
 {
-  background-color: #ffffff;
-  font-size: 4em;
-  position: absolute;
-  padding-top: 10px;
-  left: 0;
-  top:0;
-  right: 0;
-  height: auto;
-  width: 100%;
-  text-align: center;
+    font-size: 3.5em;
+    position: absolute;
+    padding-top: 10px;
+    left: 0;
+    top: 100px;
+    right: 0;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
 }
 
 #headershort
 {
-  display: inline-block;
+    display: inline-block;
 }
 
 #headerlong
 {
-  display: inline-block;
-}
-
-#nav
-{
-  font-size: 200%;
-  position: absolute;
-  margin-top: 30%;
-  width: 25%;
-  height: 20%;
-  text-align: center;
+    display: inline-block;
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+  card
+  {
+    width: 80%;
+    left: 10%;
+    right: 10%;
+  }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
+  card
+  {
+    width: 90%;
+    left: 5%;
+    right: 5%;
+  }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-  #headershort
-  {
-    font-size: 0.75em;
-    display: inline-block;
-  }
 
   #headerlong
-  {
-    font-size: 0.65em;
-    display: inline-block;
+  { 
+    display: none;
   }
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
-  #headershort
+  ribbon
   {
-    font-size: 1em;
+    height: 80px;
   }
 
+  card
+  {
+    width: 100%;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  .header
+  {
+    top: 0;
+  }
+  
   #headerlong
   {
     display: none;
   }
+  
 }
 
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
-  #headershort
-  {
-    font-size: 1em;
-  }
 
-  #headerlong
-  {
-     display: none;
-  }
 }
