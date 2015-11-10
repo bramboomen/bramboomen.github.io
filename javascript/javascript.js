@@ -1,6 +1,6 @@
 $(function() {
 
-	var sticky_navigation = function(){
+	$(window).scroll(function() {
 	    
 		var scroll_top = $(window).scrollTop();
 		var scrolloffset = 210;
@@ -10,9 +10,5 @@ $(function() {
 		} else {
 			$('menuribbon').css({ 'position': 'absolute', 'top':210}); 
 		}   
-	};
-	
-	$(window).scroll(function() {
-		 sticky_navigation();
 	});
 });
