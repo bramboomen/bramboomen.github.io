@@ -18,18 +18,13 @@ p, h1
 menuribbon
 {
     display: block;
+    position: absolute;
     background-color: #0097A7;
     width: 65%;
     height: 50px;
     padding-left: 35%;
     
     box-shadow: 0px 0px 4px black;
-}
-
-menuribbon.fixmenu
-{
-    position: fixed;
-    top: 0;
 }
 
 ribbon
@@ -71,7 +66,7 @@ menuribbon a
 main
 {
     height: 3000px;
-    padding-top: 10px;
+    padding-top: 60px;
     margin-left: -100px;
     padding-left: 30%;
     padding-right: 30%;
