@@ -19,7 +19,7 @@ menuribbon
 {
     display: block;
     background-color: #0097A7;
-    width: 90%;
+    width: 65%;
     height: 50px;
     padding-left: 35%;
     
@@ -31,7 +31,7 @@ ribbon
     display: block;
     background-color: #00BCD4;
     height: 70px;
-    width: 100%;
+    width: 65%%;
     padding-left: 35%;
 }
 
@@ -117,11 +117,13 @@ card
   
   ribbon
   {
+    width: 80%;
     padding-left: 20%;
   }
   
   menuribbon
   {
+    width: 80%;
     padding-left: 20%;
   }
   
@@ -155,6 +157,7 @@ card
   {
     padding-left: 5%;
     padding-right: 5%;
+    width: 90%;
   }
 
   menuribbon a
