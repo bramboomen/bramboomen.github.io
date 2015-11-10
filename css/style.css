@@ -26,12 +26,18 @@ menuribbon
     box-shadow: 0px 0px 4px black;
 }
 
+menuribbon.fixmenu
+{
+    position: fixed;
+    top: 0;
+}
+
 ribbon
 {
     display: block;
     background-color: #00BCD4;
     height: 70px;
-    width: 65%%;
+    width: 65%;
     padding-left: 35%;
 }
 
@@ -43,6 +49,7 @@ ribbon
   width: 160px;
   height: 160px;
   border-radius: 100%;
+  transition: width 200ms, height 200ms;
 }
 
 menuribbon a
