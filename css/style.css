@@ -19,7 +19,7 @@ menuribbon
 {
     display: block;
     background-color: #0097A7;
-    width: 100%;
+    width: 90%;
     height: 50px;
     padding-left: 10%;
     
@@ -32,6 +32,13 @@ ribbon
     background-color: #00BCD4;
     height: 70px;
     width: 100%;
+}
+
+#profilepic
+{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
 }
 
 menuribbon a
@@ -72,12 +79,13 @@ card
     z-index: 2;
 }
 
+
 .header
 {
     font-size: 3em;
     margin-left: 10%;
     text-align: left;
-    height 50px;
+    height: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
     z-index: 10;
