@@ -30,8 +30,15 @@
     
     <main>
       <h1 class="anchor" id="cv">Curicculum Vitae</h1>
+      <link rel="import" id="cv" href="resources/cv.html">
+        <script>
+		      var getImport  = document.querySelector('#cv');
+		      var getContent = getImport.import.querySelector('#container');
+	        document.body.appendChild(document.importNode(getContent, true));
+	      </script>
       <h1 class="anchor" id="portfolio">Portfolio</h1>
       <h1 class="anchor" id="contact">Heb contact met mij!</h1>
     </main>
+    
   </body>
 </html>

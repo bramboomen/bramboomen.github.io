@@ -73,7 +73,8 @@ menuribbon a
 main
 {
     display: block;
-    height: 3000px;
+    height: auto;
+    width: 80%;
     padding-top: 50px;
     margin-left: -100px;
     padding-left: 30%;

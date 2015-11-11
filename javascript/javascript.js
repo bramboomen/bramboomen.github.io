@@ -10,7 +10,5 @@ $(function() {
 		} else {
 			$('menuribbon').css({ 'position': 'absolute', 'top':210}); 
 		}
-		
-		(window).scroll();
 	});
 });
