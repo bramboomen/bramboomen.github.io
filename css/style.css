@@ -218,7 +218,7 @@ blockquote
     width: 90px;
     text-align: center;
     font-size: 0.9em;
-    color: #444;
+    color: #444444;
 }
 
 .codeimg
@@ -246,11 +246,11 @@ blockquote
     height: 16px;
     font-size: 14px;
     text-align: center;
-    color: #00BCD4
+    color: rgba(0, 0, 0, 0);
 }
 .level:hover
 {
-    color: #fff;
+    color: #111;
 }
 
 #level10 { width: 100%; }
