@@ -22,13 +22,33 @@ function prepareList() {
         if (this == event.target) {
             $(this).toggleClass('expanded');
             $(this).children('blockquote').slideToggle("fast");
+            $(this).find('#arrow').toggleClass('rotatedarrow');
         }
         return false;
     })
     .addClass('collapsed')
     .children('blockquote').hide();
+    
+    $('#meer').unbind('click')
+    .click( function() {
+        $('.collapsed').addClass('expanded');
+        $('.collapsed').children('blockquote').slideDown('fast');
+        $('.collapsed').find('#arrow').removeClass('rotatedarrow');
+        $('#meer').hide();
+        $('#minder').show();
+    });
+    
+    $('#minder').unbind('click')
+    .click( function() {
+        $('.collapsed').removeClass('expanded');
+        $('.collapsed').children('blockquote').slideUp('fast');
+        $('.collapsed').find('#arrow').addClass('rotatedarrow');
+        $('#meer').show();
+        $('#minder').hide();
+    });
 }
 
 $(document).ready( function() {
     prepareList();
+    $('#minder').hide();
 });
