@@ -8,6 +8,7 @@ body
 {
     background-color: #eeeeee;
     margin: 0;
+    margin-bottom: -16px;
 }
 
 p
@@ -37,7 +38,7 @@ ribbon
     padding-left: 35%;
 }
 
-ribbon.menuplaceholder
+ribbon .menuplaceholder
 {
     height: 50px;
     visibility: hidden;
@@ -110,8 +111,38 @@ main
 
 .snackbar
 {
+    font-size: 0.9em;
+    color: white;
     background-color: #555555;
-    
+    padding: 45px 30px 30px 25%;
+    margin: 0;
+}
+
+h4
+{
+    margin: 15px 0px 0px 0px;
+    padding: 0;
+}
+
+.email
+{
+    color: #cccccc;
+    margin-left: 10px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.icon
+{
+    position: relative;
+    top: 9px;
+    height: 30px;
+    width: 30px;
+}
+
+.email:hover
+{
+    color: #9999ff;
 }
 
 .card
@@ -178,18 +209,6 @@ h2
     transform: rotate(-90deg);
 }
 
-.email
-{
-    color: darkblue;
-    margin-left: 20px;
-    line-height: 1.8em;
-}
-
-.email:hover
-{
-    color: blue;
-}
-
 blockquote
 {
     margin: 0;
@@ -245,6 +264,11 @@ blockquote
     width: 70%;
   }
   
+  .snackbar
+  {
+    padding-left: 20%;
+  }
+  
   .profilepic
   {
     margin-left: -15%;
@@ -282,6 +306,11 @@ blockquote
   .header
   {
     margin-left: 10%;
+  }
+  
+  .snackbar
+  {
+    padding-left: 15%;
   }
 }
 
