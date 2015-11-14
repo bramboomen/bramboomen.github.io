@@ -111,9 +111,9 @@ main
 
 .snackbar
 {
+    background-color: #555555;
     font-size: 0.9em;
     color: white;
-    background-color: #555555;
     padding: 45px 30px 30px 25%;
     margin: 0;
 }
