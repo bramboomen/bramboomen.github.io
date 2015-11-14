@@ -16,18 +16,7 @@ p
     font-size: 1em;
 }
 
-menuribbon
-{
-    display: block;
-    position: absolute;
-    top: 210px;
-    background-color: #0097A7;
-    width: 65%;
-    height: 50px;
-    padding-left: 35%;
-    z-index: 10;
-    box-shadow: 0px 2px 4px #434343;
-}
+/***** header *****/ 
 
 ribbon
 {
@@ -76,6 +65,42 @@ ribbon .menuplaceholder
     99%{opacity: 1;}
     100%{opacity: 0;}
 }
+
+.header
+{
+    display: inline-block;
+    font-size: 3em;
+    text-align: left;
+    height: 50px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    margin-left: 5%;
+    z-index: 10;
+}
+
+#headershort
+{
+    display: inline-block;
+}
+
+#headerlong
+{
+    display: inline-block;
+}
+
+menuribbon
+{
+    display: block;
+    position: absolute;
+    top: 210px;
+    background-color: #0097A7;
+    width: 65%;
+    height: 50px;
+    padding-left: 35%;
+    z-index: 10;
+    box-shadow: 0px 2px 4px #434343;
+}
+
 menuribbon a
 {
     display: inline-block;
@@ -88,9 +113,10 @@ menuribbon a
     text-align: center;
 }
 
-
 #cvk {display: none;}
 #cvl {display: visible;}
+
+/***** body *****/
 
 main
 {
@@ -107,42 +133,6 @@ main
    display: block;
    height: 70px;
    margin: -30px 0 0;
-}
-
-.snackbar
-{
-    background-color: #555555;
-    font-size: 0.9em;
-    color: white;
-    padding: 45px 30px 30px 25%;
-    margin: 0;
-}
-
-h4
-{
-    margin: 15px 0px 0px 0px;
-    padding: 0;
-}
-
-.email
-{
-    color: #cccccc;
-    margin-left: 10px;
-    text-decoration: none;
-    vertical-align: middle;
-}
-
-.icon
-{
-    position: relative;
-    top: 9px;
-    height: 30px;
-    width: 30px;
-}
-
-.email:hover
-{
-    color: #9999ff;
 }
 
 .card
@@ -182,18 +172,17 @@ date
     display: inline-block;
     float: right;
 }
+.button:hover
+{
+    background-color: #30B1C7;
+    cursor: pointer;
+}
 
 h2
 {
     width: auto;
     display: inline-block;
     margin-top: 10px;
-}
-
-.button:hover
-{
-    background-color: #30B1C7;
-    cursor: pointer;
 }
 
 #arrow
@@ -203,10 +192,14 @@ h2
     margin-left: -30px;
     transition: 200ms linear all;
 }
-
 .rotatedarrow
 {
     transform: rotate(-90deg);
+}
+
+#expList ul
+{
+    cursor: pointer;
 }
 
 blockquote
@@ -218,41 +211,85 @@ blockquote
     cursor: default;
 }
 
-#expList ul
+.codeimg
 {
-  cursor: pointer;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    top: 9px;
+    margin-right: 25px;
 }
 
-#expList .collapsed
-{
-  background-image: url(../img/collapsed.png);
-}
-
-#expList .expanded
-{
-  background-image: url(../img/expanded.png);
-}
-
-.header
+.progressbar
 {
     display: inline-block;
-    font-size: 3em;
-    text-align: left;
-    height: 50px;
-    padding-top: 80px;
-    padding-bottom: 100px;
-    margin-left: 5%;
-    z-index: 10;
+    width: 80%;
+    height: 16px;
+    border: 2px solid black;
+    border-radius: 4px;
 }
 
-#headershort
+.level
 {
-    display: inline-block;
+    background-color: #00BCD4;
+    height: 16px;
+    font-size: 14px;
+    text-align: center;
+    color: #00BCD4
+}
+.level:hover
+{
+    color: #fff;
 }
 
-#headerlong
+#level10 { width: 100%; }
+#level9 { width: 90%; }
+#level8 { width: 80%; }
+#level7 { width: 70%; }
+#level6 { width: 60%; }
+#level5 { width: 50%; }
+#level4 { width: 40%; }
+#level3 { width: 30%; }
+#level2 { width: 20%; }
+#level1 { width: 10%; }
+#level0 { width: 0%; }
+
+/***** footer *****/
+
+.snackbar
 {
-    display: inline-block;
+    background-color: #555555;
+    font-size: 0.9em;
+    color: white;
+    padding: 45px 30px 30px 25%;
+    margin: 0;
+}
+
+h4
+{
+    margin: 15px 0px 0px 0px;
+    padding: 0;
+}
+
+.email
+{
+    color: #cccccc;
+    margin-left: 10px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.icon
+{
+    position: relative;
+    top: 9px;
+    height: 30px;
+    width: 30px;
+}
+
+.email:hover
+{
+    color: #9999ff;
 }
 
 /* Large Devices, Wide Screens */
@@ -334,11 +371,6 @@ blockquote
     border-bottom: 1px solid grey;
   }
   
-  main
-  {
-    
-  }
-  
   menuribbon
   {
     padding-left: 5%;
@@ -355,8 +387,9 @@ blockquote
     width: 24%;
   }
 
-#cvl {display: none;}
-#cvk {display: inline-block;}
+    #cvl {display: none;}
+    #cvk {display: inline-block;}
+
 }
 
 /* Extra Small Devices, Phones */ 
@@ -380,18 +413,18 @@ main
 
 #headershort
 {
-  display: block;
-  position: absolute;
-  width: auto;
-  left: 50%;
-  transform: translate(-50%, 0);
-  top: 140px;
+    display: block;
+    position: absolute;
+    width: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 140px;
 }
 
 .profilepic
 {
-  height: 100px;
-  width: 100px;
+    height: 100px;
+    width: 100px;
 }
   
 }
