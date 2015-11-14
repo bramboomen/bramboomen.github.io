@@ -32,7 +32,7 @@ ribbon
 {
     display: block;
     background-color: #00BCD4;
-    height: 70px;
+    height: 210px;
     width: 65%;
     padding-left: 35%;
 }
@@ -214,8 +214,8 @@ blockquote
     font-size: 3em;
     text-align: left;
     height: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 80px;
+    padding-bottom: 100px;
     margin-left: 5%;
     z-index: 10;
 }
