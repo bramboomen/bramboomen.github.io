@@ -514,24 +514,14 @@ main
 
 #headershort
 {
-    display: block;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    left: 50%;
-    transform: translate(-50%, 0);
-    top: 154px;
-    background-color: #00BCD4;
 }
 
 .profilepic
 {
     position: absolute;
-    height: 300px;
-    width: 300px;
-    left: 50%;
-    margin-left: -150px;
-    margin-top: -70px;
+    height: 130px;
+    width: 130px;
+    margin-top: 40px;
 }
 
 ul
