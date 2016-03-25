@@ -19,10 +19,12 @@ $(function() {
 function prepareList() {
     $('#expList').find('ul:has(blockquote)')
     .click( function(event) {
-        if (this == event.target) {
+        //if (this == event.target)
+        {
             $(this).toggleClass('expanded');
             $(this).children('blockquote').slideToggle("fast");
             $(this).find('#arrow').toggleClass('rotatedarrow');
+            $(this).toggleClass('divider');
         }
         return false;
     })
