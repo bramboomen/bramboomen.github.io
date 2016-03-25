@@ -367,8 +367,8 @@ h4
 @media only screen and (max-width : 1200px) {
   main
   {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
     width: 70%;
   }
   
@@ -398,6 +398,12 @@ h4
   menuribbon a
   {
     padding-right: 5%;
+  }
+  
+  ul
+  {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 
@@ -530,12 +536,20 @@ ul
 
 .codetitle
 {
-    width: 50px;
+    width: 90px;
 }
 
 .codeimg
 {
+    margin-left: 0px;
+}
+
+.progressbar
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-right: 5px;
+    width: 95%;
 }
 
 
