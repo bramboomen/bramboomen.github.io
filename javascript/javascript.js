@@ -36,6 +36,7 @@ function prepareList() {
         $('.collapsed').addClass('expanded');
         $('.collapsed').children('blockquote').slideDown('fast');
         $('.collapsed').find('#arrow').removeClass('rotatedarrow');
+        $('.collapsed').addClass('divider');
         $('#meer').hide();
         $('#minder').show();
     });
@@ -45,6 +46,7 @@ function prepareList() {
         $('.collapsed').removeClass('expanded');
         $('.collapsed').children('blockquote').slideUp('fast');
         $('.collapsed').find('#arrow').addClass('rotatedarrow');
+        $('.collapsed').removeClass('divider');
         $('#meer').show();
         $('#minder').hide();
     });
