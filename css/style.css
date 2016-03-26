@@ -325,6 +325,90 @@ blockquote
 #level1 { width: 10%; }
 #level0 { width: 0%; }
 
+#tilecard
+{
+    padding-bottom: 0;
+}
+
+.tilelayout
+{
+    overflow: hidden;
+    height: auto;
+    padding: 5px;
+}
+
+#box
+{
+    float: left;
+    padding-bottom: 33.33%;
+    width: 33.33%;
+    position: relative;
+    background-color: #fff;
+}
+
+.tile
+{
+    overflow: hidden;
+    position: absolute;
+    box-sizing: border-box;
+    right: 5px;
+    left: 5px;
+    top: 5px;
+    bottom: 5px;
+}
+
+#filename
+{
+    font-weight: 100;
+    font-size: 1.2em;
+    position: absolute;
+    color: white;
+    background-color: rgba(0,0,0,0.2);
+    height: 20%;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    min-height: 45px;
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+.pdf
+{
+    background: #B71C1C url(../resources/pdf.png) center no-repeat;
+}
+.pdf:hover
+{
+    background-color: #D32F2F;
+}
+
+.zip
+{
+    background: #FFC107 url(../resources/archive.png) center no-repeat;
+}
+.zip:hover
+{
+    background-color: #FFD54F;
+}
+
+.txt
+{
+    background: #9E9E9E url(../resources/pencil.png) center no-repeat;
+}
+.txt:hover
+{
+    background-color: #BDBDBD;
+}
+
+.file
+{
+    background: #03A9F4 url(../resources/folder.png) center no-repeat;
+}
+.file:hover
+{
+    background-color: #4FC3F7;
+}
+
 /***** footer *****/
 
 .snackbar
@@ -380,13 +464,13 @@ h4
   
   .profilepic
   {
-    margin-left: 10%;
+    margin-left: 15%;
   }
   
   .header
   {
-      margin-left: 10%;
-      padding-left: 100px;
+      margin-left: 15%;
+      padding-left: 200px;
   }
   
   ribbon
@@ -421,6 +505,11 @@ h4
     width: 80%;
   }
   
+  .profilepic
+  {
+    margin-left: 10%
+  }
+  
   .header
   {
     margin-left: 10%;
@@ -436,6 +525,12 @@ h4
     padding-left: 100px;
     padding-right: 100px;
   }
+  
+  #box
+  {
+    width: 33.33%;
+    padding-bottom: 33.33%;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -448,7 +543,7 @@ h4
   
   .header
   {
-    margin-left: 30%;
+      
   }
   
   .card
@@ -479,6 +574,12 @@ h4
     padding-left: 40px;
     padding-right: 40px;
   }
+  
+  #box
+  {
+    width: 50%;
+    padding-bottom: 50%;
+  }
 
     #cvl {display: none;}
     #cvk {display: inline-block;}
@@ -493,6 +594,11 @@ main
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
+}
+
+.header
+{
+    padding-left: 150px;
 }
 
 .card
@@ -553,11 +659,20 @@ ul
     width: 95%;
 }
 
-
+#box
+{
+    width: 100%;
+    padding-bottom: 100%;
+}
   
 }
 
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
+
+#box
+{
+    width: 100%;
+}
 
 }
