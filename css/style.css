@@ -40,10 +40,17 @@ ribbon .menuplaceholder
     visibility: hidden;
 }
 
+#headerwrapper
+{
+    height: auto;
+    width: 840px;
+    margin: 0 auto;
+}
+
 .profilepic
 {
     position: absolute;
-    margin-left: 20%;
+    margin-left: 0%;
     margin-top: 25px;
     width: 160px;
     height: 160px;
@@ -80,9 +87,9 @@ ribbon .menuplaceholder
     text-align: left;
     height: 50px;
     padding-top: 80px;
-    padding-bottom: 100px;
-    padding-left: 300px;
-    margin-left: 20%;
+    padding-left: 40px;
+    width: 100%;
+    text-align: center;
     z-index: 10;
 }
 
@@ -131,8 +138,6 @@ main
     height: auto;
     width: 840px;
     padding-top: 50px;
-    padding-left: 0%;
-    padding-right: 0%;
     margin: 0 auto;
 }
 
@@ -470,27 +475,21 @@ h4
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-  main
+  main, #headerwrapper
   {
     padding-left: 15%;
     padding-right: 15%;
     width: 70%;
   }
   
+  .header
+  {
+     padding-left: 70px;
+  }
+  
   .snackbar
   {
     padding-left: 20%;
-  }
-  
-  .profilepic
-  {
-    margin-left: 15%;
-  }
-  
-  .header
-  {
-      margin-left: 15%;
-      padding-left: 200px;
   }
   
   ribbon
@@ -517,21 +516,16 @@ h4
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-  main
+  main, #headerwrapper
   {
     padding-left: 10%;
     padding-right: 10%;
     width: 80%;
   }
   
-  .profilepic
-  {
-    margin-left: 10%
-  }
-  
   .header
   {
-    margin-left: 10%;
+     padding-left: 100px;
   }
   
   .snackbar
@@ -560,9 +554,9 @@ h4
     display: none;
   }
   
-  .header
+    .header
   {
-      
+     padding-left: 50px;
   }
   
   .card
@@ -602,7 +596,7 @@ h4
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
 
-main
+main, #headerwrapper
 {
     width: 90%;
     padding-left: 5%;
@@ -611,7 +605,7 @@ main
 
 .header
 {
-    padding-left: 150px;
+    padding-left: 70px;
 }
 
   menuribbon
@@ -643,14 +637,6 @@ main
 
 #headershort
 {
-}
-
-.profilepic
-{
-    position: absolute;
-    height: 130px;
-    width: 130px;
-    margin-top: 40px;
 }
 
 ul
