@@ -84,7 +84,6 @@ ribbon .menuplaceholder
     color: #000;
     display: inline-block;
     font-size: 3em;
-    text-align: left;
     height: 50px;
     padding-top: 80px;
     padding-left: 40px;
@@ -117,7 +116,9 @@ menuribbon
 
 #menuwrapper
 {
-    
+    height: auto;
+    width: 840px;
+    margin: 0 auto;
 }
 
 menuribbon a
@@ -125,7 +126,7 @@ menuribbon a
     display: inline-block;
     color: white;
     text-decoration: none;
-    width: 150px;
+    width: 24%;
     height: 50px;
     line-height: 50px;
     text-align: center;
@@ -478,7 +479,7 @@ h4
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-  main, #headerwrapper
+  main, #headerwrapper, #menuwrapper
   {
     padding-left: 15%;
     padding-right: 15%;
@@ -519,7 +520,7 @@ h4
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-  main, #headerwrapper
+  main, #headerwrapper, #menuwrapper
   {
     padding-left: 10%;
     padding-right: 10%;
@@ -528,7 +529,9 @@ h4
   
   .header
   {
-     padding-left: 100px;
+     padding-left: 0px;
+     width: 100%;
+     text-align: right;
   }
   
   .snackbar
@@ -559,7 +562,9 @@ h4
   
     .header
   {
-     padding-left: 50px;
+     padding-left: 100px;
+     width: 80%;
+     text-align: center;
   }
   
   .card
@@ -567,16 +572,6 @@ h4
     border-radius: 3px;
     box-shadow: none;
     border-bottom: 1px solid grey;
-  }
-  
-  menuribbon
-  {
-    transform: translate(-200px,0);
-  }
-
-  menuribbon a
-  {
-    width: 100px;
   }
   
   ul
@@ -599,7 +594,7 @@ h4
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
 
-main, #headerwrapper
+main, #headerwrapper, #menuwrapper
 {
     width: 90%;
     padding-left: 5%;
@@ -608,18 +603,10 @@ main, #headerwrapper
 
 .header
 {
-    padding-left: 70px;
+    padding-left: 0;
+    width: 90%;
+    text-align: right;
 }
-
-  menuribbon
-  {
-    transform: translate(-140px,0);
-  }
-
-  menuribbon a
-  {
-    width: 70px;
-  }
 
 .card
 {
@@ -636,10 +623,6 @@ main, #headerwrapper
     padding-left: 0;
     padding-right: 0;
     border-radius: 0;
-}
-
-#headershort
-{
 }
 
 ul
@@ -677,19 +660,4 @@ ul
     padding-bottom: 100%;
 }
   
-}
-
-/* Custom, iPhone Retina */ 
-@media only screen and (max-width : 320px) {
-
-  menuribbon
-  {
-    transform: translate(-120px,0);
-  }
-
-  menuribbon a
-  {
-    width: 60px;
-  }
-
 }
