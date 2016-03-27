@@ -409,6 +409,26 @@ blockquote
     background-color: #4FC3F7;
 }
 
+.tbs
+{
+    background: #fff url(../resources/tbs.jpg) no-repeat;
+    background-size: cover;
+}
+.tbs:hover
+{
+    opacity: 0.8;
+}
+
+.httj
+{
+    background: #fff url(../resources/httj.jpg) no-repeat;
+    background-size: cover;
+}
+.httj:hover
+{
+    opacity: 0.8;
+}
+
 /***** footer *****/
 
 .snackbar
