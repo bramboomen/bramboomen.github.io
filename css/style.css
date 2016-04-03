@@ -464,6 +464,13 @@ h4
     vertical-align: middle;
 }
 
+#gmail::after
+{    content:"@gmail.com";    }
+#outlook::after
+{    content:"@outlook.com";    }
+#uumail::after
+{    content:"@students.uu.nl";    }
+
 .icon
 {
     position: relative;
