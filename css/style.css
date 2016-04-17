@@ -126,7 +126,7 @@ menuribbon a
     display: inline-block;
     color: white;
     text-decoration: none;
-    width: 24%;
+    width: 23%;
     height: 50px;
     line-height: 50px;
     text-align: center;
@@ -188,6 +188,13 @@ ul
    font-size: 1.1em;
 }
 
+#ulcard
+{
+    padding: 0;
+    padding-top: 50px;
+    min-height: 100px;
+}
+
 date
 {
     color: #000;
@@ -247,11 +254,17 @@ h3
 {
     float: right;
     z-index: 0;
-    margin-right: 0px;
     margin-left: 30px;
     padding-top: 0px;
     transition: 200ms linear all;
 }
+
+.cardarrow
+{
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
 .rotatedarrow
 {
     transform: rotate(-180deg);
@@ -260,6 +273,11 @@ h3
 .exp
 {
     cursor: pointer;
+}
+
+.exponly
+{
+    border-style: none;
 }
 
 .expfirst.divider
@@ -336,7 +354,7 @@ blockquote
 
 #tilecard
 {
-    padding-bottom: 0;
+    padding: 0;
 }
 
 .tilelayout
@@ -667,4 +685,19 @@ ul
     padding-bottom: 100%;
 }
   
+}
+
+@media only screen and (max-width : 370px) {
+
+.profilepic
+{
+    display: none;
+}
+
+.header
+{
+    padding-left: 10px;
+    text-align: center;
+}
+
 }
