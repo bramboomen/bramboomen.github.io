@@ -19,7 +19,6 @@ $(function() {
 function prepareList() {
     $('#expList').find('ul:has(blockquote)')
     .click( function(event) {
-        //if (this == event.target)
         {
             $(this).toggleClass('expanded');
             $(this).children('blockquote').slideToggle("fast");
@@ -30,6 +29,10 @@ function prepareList() {
     })
     .addClass('collapsed')
     .children('blockquote').hide();
+    
+    $('#box').click(function(event){
+    event.stopPropagation();
+    });
     
     $('#meer').unbind('click')
     .click( function() {
