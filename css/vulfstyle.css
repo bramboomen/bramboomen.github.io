@@ -28,6 +28,11 @@ a
     text-decoration: none;
 }
 
+h1, h2
+{
+    font-size: 1em;
+}
+
 /***** header *****/ 
 
 top
@@ -39,9 +44,10 @@ menu
 {
     padding: 0;
     margin: 0;
-    background-color: #fff;
+    background: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,0));
     position: absolute;
-    top: 120px;
+    top: 140px;
+    height: 100px;
 }
 
 /***** body *****/
@@ -49,6 +55,7 @@ menu
 main
 {
     width: 750px;
+    margin: 100px 10px 0 10px;
 }
 
 pre
@@ -60,7 +67,7 @@ date
 {
     display: inline-block;
     color: #000;
-    padding-left: 47px;
+    padding-left: 44px;
 }
 
 .toggle-label
@@ -72,7 +79,7 @@ date
 titel
 {
     display: block;
-    padding-left: 47px
+    padding-left: 44px
 }
 
 blockquote
@@ -98,7 +105,7 @@ blockquote
 .toggle-label::before
 {
     content: "[-]";
-    margin-right: -47px;
+    margin-right: -46px;
 }
 
 .toggle-input
