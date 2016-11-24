@@ -1,0 +1,272 @@
+html
+{
+    font-size: 18px;
+    font-family: "Roboto Mono", monospace;
+    letter-spacing: 0.04em;
+    color: #555;
+}
+
+body
+{
+    background-color: #ffffff;
+    margin: 0;
+}
+
+p
+{
+    font-size: 1em;
+}
+
+li
+{
+    font-size: 0.9em;
+    color: #444;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+/***** header *****/ 
+
+top
+{
+    
+}
+
+menu
+{
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    position: absolute;
+    top: 120px;
+}
+
+/***** body *****/
+
+main
+{
+    width: 750px;
+}
+
+pre
+{
+    margin: 0px;
+}
+
+date
+{
+    display: inline-block;
+    color: #000;
+    padding-left: 47px;
+}
+
+.toggle-label
+{
+    display: block;
+    padding-bottom: 20px;
+}
+
+titel
+{
+    display: block;
+    padding-left: 47px
+}
+
+blockquote
+{
+    
+}
+
+.toggle-content
+{
+    padding: 0px 20px 20px 20px;
+}
+
+/***** toggle *****/
+.entry
+{
+    
+}
+
+.toggle-label
+{
+    cursor: pointer;
+}
+.toggle-label::before
+{
+    content: "[-]";
+    margin-right: -47px;
+}
+
+.toggle-input
+{
+    display: none;
+}
+
+.toggle-input:not(:checked) ~ .toggle-content
+{
+    display: none;
+}
+
+.toggle-content
+{
+    padding-left: 42px;
+}
+
+.toggle-input:not(:checked) ~ .toggle-label::before
+{
+    content: "[+]"
+}
+
+.toggle-input:not(:checked) ~ #nocontent.toggle-label::before
+{
+    content: "[ ]"
+}
+
+.toggle-input:not(:checked) ~ .toggle-label
+{
+    padding-bottom: 20px;
+}
+
+/***** toggle *****/
+
+#icon
+{
+    float: left;
+    padding-left: 40px;
+    margin-top: 0px
+}
+
+h1
+{
+    font-weight: 500;
+    color: #000;    
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2
+{
+    color: #000;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h3
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.codetitle
+{
+    display: inline-block;
+    margin-right: 20px;
+    width: 90px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #444444;
+}
+
+.codeimg
+{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    top: 9px;
+    margin-right: 15px;
+}
+
+.progressbar
+{
+    display: inline-block;
+    width: 40%;
+    max-width: 400px;
+    height: 16px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.level
+{
+    background-color: #00BCD4;
+    height: 16px;
+    font-size: 14px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0);
+}
+.level:hover
+{
+    color: #111;
+}
+
+#level10 { width: 100%; }
+#level9 { width: 90%; }
+#level8 { width: 80%; }
+#level7 { width: 70%; }
+#level6 { width: 60%; }
+#level5 { width: 50%; }
+#level4 { width: 40%; }
+#level3 { width: 30%; }
+#level2 { width: 20%; }
+#level1 { width: 10%; }
+#level0 { width: 0%; }
+
+
+/***** footer *****/
+
+h4
+{    
+    margin: 15px 0px 0px 0px;
+    padding: 0;
+}
+
+.email
+{
+    color: #cccccc;
+    margin-left: 10px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+#gmail::after
+{    content:"@gmail.com";    }
+#outlook::after
+{    content:"@outlook.com";    }
+#uumail::after
+{    content:"@students.uu.nl";    }
+
+.email:hover
+{
+    color: #9999ff;
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Superduper Small Devices, Smurfs */
+@media only screen and (max-width : 370px) {
+
+}
