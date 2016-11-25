@@ -89,6 +89,10 @@ menu
 {
     display: none;
 }
+.midsmall
+{
+    display: none;
+}
 
 /***** body *****/
 
@@ -180,9 +184,8 @@ titel
 .codetitle
 {
     display: inline-block;
-    margin-right: 20px;
     margin-left: 40px;
-    width: 140px;
+    width: 110px;
     color: #f00;
 }
 
@@ -262,6 +265,10 @@ h4
 {
     display: inline;
 }
+.midsmall
+{
+    display: none;
+}
 .small
 {
     display: none;
@@ -288,7 +295,7 @@ h2::after
     
 }
 
-/* Extra Small Devices, Phones */ 
+/* Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 
 .wide
@@ -296,6 +303,51 @@ h2::after
     display: none;
 }
 .mid
+{
+    display: none;
+}
+.midsmall
+{
+    display: inline;
+}
+.small
+{
+    display: none;
+}
+
+body
+{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 370px;
+}
+
+h1::after, h1::before
+{
+    content: "=====================================";
+    display: block;
+}
+
+h2::after
+{
+    content: "-------------------------------------";
+    display: block;
+}
+    
+}
+
+/* Superduper Small Devices, Smurfs */ 
+@media only screen and (max-width : 380px) {
+
+.wide
+{
+    display: none;
+}
+.mid
+{
+    display: none;
+}
+.midsmall
 {
     display: none;
 }
@@ -331,18 +383,12 @@ main, contentblock
 
 .codetitle
 {
-    margin-right: 10px;
-    margin-left: 30px;
-    width: 70px;
+    margin-left: 15px;
+    width: 90px;
 }
 .level
 {
     
 }
-
-}
-
-/* Superduper Small Devices, Smurfs */
-@media only screen and (max-width : 370px) {
 
 }
