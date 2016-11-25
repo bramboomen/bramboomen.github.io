@@ -46,12 +46,21 @@ h1::after, h1::before
 {
     content: "================================================================";
     display: block;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 h2::after
 {
     content: "----------------------------------------------------------------";
     display: block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.entry
+{
+    padding-right: 20px;
 }
 
 /***** header *****/ 
@@ -129,10 +138,6 @@ titel
 }
 
 /***** toggle *****/
-.entry
-{
-    
-}
 
 .toggle-label
 {
@@ -368,10 +373,9 @@ h2::after
 {
     content: "--------------------------------";
     display: block;
-    white-space: nowrap;
 }
 
-main, contentblock
+contentblock
 {
     margin-right: 20px
 }
