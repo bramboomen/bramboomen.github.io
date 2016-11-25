@@ -8,8 +8,9 @@ $(function() {
 		
 		if (scroll_top > scrolloffset) { 
 			$('menu').css({ 'position': 'fixed', 'top':0});
+			$('menu').css({ 'display' : 'block'}); 
 		} else {
-			$('menu').css({ 'position': 'absolute', 'top':133}); 
+			$('menu').css({ 'display' : 'none'}); 
 		}
 	});
 });
