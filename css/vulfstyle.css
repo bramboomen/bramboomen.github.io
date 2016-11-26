@@ -75,9 +75,10 @@ menu
         rgba(255,255,255,1),
         rgba(255,255,255,1),
         rgba(255,255,255,0));
-    position: absolute;
+    position: fixed;
+    top: 0;
+    display: none;
     height: 65px;
-    top: 133px;
 }
 .wide
 {
