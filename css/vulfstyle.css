@@ -1,6 +1,6 @@
 html
 {
-    font-size: 17px;
+    font-size: 16px;
     font-family: "Lucida Console", monospace;
     color: #000;
 }
@@ -8,19 +8,8 @@ html
 body
 {
     background-color: #ffffff;
-    margin: 0 20px 20px 20px;
-    max-width: 640px;
-}
-
-p
-{
-    font-size: 1em;
-}
-
-li
-{
-    font-size: 0.9em;
-    color: #444;
+    max-width: calc(65*0.5882em);
+    margin: 0 calc(2*0.5882em) 2em calc(2*0.5882em);
 }
 
 a
@@ -31,7 +20,6 @@ a
 a:hover
 {
     color: #0000ff;
-    text-decoration: underline;
 }
 
 h1, h2, h3
@@ -39,7 +27,7 @@ h1, h2, h3
     font-size: 1em;
     text-decoration: none;
     font-weight: normal;
-    margin-top: 40px;
+    margin-top: 3em;
 }
 
 h1::after, h1::before
@@ -65,7 +53,7 @@ h2::after
 
 menu
 {
-    padding: 0;
+    padding: 0.5em 0 0 0;
     margin: 0;
     background: linear-gradient(
         to bottom, 
@@ -76,7 +64,6 @@ menu
         rgba(255,255,255,1),
         rgba(255,255,255,0));
     position: fixed;
-    top: 0;
     display: none;
     height: 65px;
 }
@@ -99,14 +86,9 @@ menu
 
 /***** body *****/
 
-main
-{
-    margin: 50px 0 0 0;
-}
-
 pre
 {
-    margin: 0px;
+    margin: 0;
 }
 
 date
@@ -116,30 +98,31 @@ date
 }
 date#moreline
 {
-    padding-left: 40px;
-}
-
-.toggle-label
-{
-    display: block;
-    padding-bottom: 20px;
+    padding-left: calc(4*0.5882em);
 }
 
 titel
 {
     display: block;
-    padding-left: 60px
+    padding-left: calc(6*0.5882em);
 }
 
-.toggle-content
+contentblock
 {
-    padding: 0px 20px 20px 20px;
+    display: block;
+    margin-left: calc(4*0.5882em);
 }
+
+
+
+
 
 /***** toggle *****/
 
 .toggle-label
 {
+    display: block;
+    padding-bottom: 1em;
     cursor: pointer;
 }
 .toggle-label::before
@@ -157,25 +140,27 @@ titel
     display: none;
 }
 
-.toggle-content
+.toggle-input:not(:checked) ~ .toggle-label
 {
-    padding-left: 60px;
+    padding-bottom: 1em;
 }
-
 .toggle-input:not(:checked) ~ .toggle-label::before
 {
     content: "[+]"
 }
 
-#nocontent::before
+.toggle-content
 {
-    content: "[o] ";
-    cursor: default;
+    padding: 0 calc(2*0.5882em) 1em calc(6*0.5882em);
 }
 
-.toggle-input:not(:checked) ~ .toggle-label
+#nocontent
 {
-    padding-bottom: 20px;
+    cursor: default;
+}
+#nocontent::before
+{
+    content: "\00a0-\00a0";
 }
 
 /***** toggle *****/
@@ -183,9 +168,11 @@ titel
 .codetitle
 {
     display: inline-block;
-    margin-left: 40px;
-    width: 110px;
+    margin-left: calc(4*0.5882em);
+    width: calc(9*0.5882em);
     color: #f00;
+    white-space: nowrap;
+    
 }
 
 .level
@@ -206,11 +193,6 @@ titel
 #level9::after { content: "[xxxxxxxxx-]"; }
 #level10::after { content: "[xxxxxxxxxx]"; }
 
-contentblock
-{
-    display: block;
-    margin-left: 40px;
-}
 
 
 /***** footer *****/
@@ -231,7 +213,6 @@ h4
 #uumail::after
 {    content:"@students.uu.nl";    }
 
-
 .email:hover
 {
     color: #00f;
@@ -239,152 +220,126 @@ h4
 }
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
+@media only screen and (max-width : 1200px) 
+{
 
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-
+@media only screen and (max-width : 992px) 
+{
+    body
+    {    
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 690px) {
-
-.wide
+@media only screen and (max-width : 690px) 
 {
-    display: none;
-}
-.mid
-{
-    display: inline;
-}
-.midsmall
-{
-    display: none;
-}
-.small
-{
-    display: none;
-}
-
-body
-{
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 440px;
-}
-
-h1::after, h1::before
-{
-    content: "============================================";
-    display: block;
-}
-
-h2::after
-{
-    content: "--------------------------------------------";
-    display: block;
-}
+    
+    .wide
+    {    display: none;    }
+    .mid
+    {    display: inline;  }
+    .midsmall
+    {    display: none;    }
+    .small
+    {    display: none;    }
+    
+    body
+    {
+        max-width: calc(45*0.5882em)
+    }
+    
+    h1::after, h1::before
+    {
+        content: "============================================";
+        display: block;
+    }
+    
+    h2::after
+    {
+        content: "--------------------------------------------";
+        display: block;
+    }
     
 }
 
 /* Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-a
+@media only screen and (max-width : 480px) 
 {
-    text-decoration: underline;
-}
-.wide
-{
-    display: none;
-}
-.mid
-{
-    display: none;
-}
-.midsmall
-{
-    display: inline;
-}
-.small
-{
-    display: none;
-}
-
-body
-{
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 370px;
-}
-
-h1::after, h1::before
-{
-    content: "=====================================";
-    display: block;
-}
-
-h2::after
-{
-    content: "-------------------------------------";
-    display: block;
-}
+    
+    a
+    {    color: #00f;      }
+    .wide
+    {    display: none;    }
+    .mid
+    {    display: none;    }
+    .midsmall
+    {    display: inline;  }
+    .small
+    {    display: none;    }
+    
+    body
+    {
+        max-width: calc(38*0.5882em);
+    }
+    
+    h1::after, h1::before
+    {
+        content: "=====================================";
+        display: block;
+    }
+    
+    h2::after
+    {
+        content: "-------------------------------------";
+        display: block;
+    }
     
 }
 
 /* Superduper Small Devices, Smurfs */ 
-@media only screen and (max-width : 380px) {
+@media only screen and (max-width : 380px) 
+{
 
-.wide
-{
-    display: none;
-}
-.mid
-{
-    display: none;
-}
-.midsmall
-{
-    display: none;
-}
-.small
-{
-    display: inline;
-}
-
-body
-{
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 320px;
-}
-
-h1::after, h1::before
-{
-    content: "================================";
-    display: block;
-}
-
-h2::after
-{
-    content: "--------------------------------";
-    display: block;
-}
-
-contentblock
-{
-    margin-right: 20px
-}
-
-.codetitle
-{
-    margin-left: 15px;
-    width: 90px;
-}
-.level
-{
+    .wide
+    {    display: none;    }
+    .mid
+    {    display: none;    }
+    .midsmall
+    {    display: none;    }
+    .small
+    {    display: inline;  }
     
-}
+    body
+    {
+        max-width: calc(33*0.5882em);
+    }
+    
+    h1::after, h1::before
+    {
+        content: "================================";
+        display: block;
+    }
+    
+    h2::after
+    {
+        content: "--------------------------------";
+        display: block;
+    }
+    
+    contentblock
+    {
+        margin-right: calc(2*0.5882em);
+    }
+    
+    .codetitle
+    {
+        margin-left: calc(2*0.5882em);
+        width: calc(9*0.5882em);
+    }
 
 }
