@@ -12,11 +12,6 @@ body
     margin: 0 calc(2*0.5882em) 2em calc(2*0.5882em);
 }
 
-anchor
-{
-    height: 100px;
-}
-
 a
 {
     text-decoration: none;
@@ -27,12 +22,20 @@ a:hover
     color: #0000ff;
 }
 
-h1, h2, h3
+h1
 {
     font-size: 1em;
     text-decoration: none;
     font-weight: normal;
-    margin-top: 3em;
+    padding-top: 4em;
+}
+
+h2, h3
+{
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: normal;
+    padding-top: 1em;
 }
 
 h1::after, h1::before
