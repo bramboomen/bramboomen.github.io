@@ -12,6 +12,11 @@ body
     margin: 0 calc(2*0.5882em) 2em calc(2*0.5882em);
 }
 
+anchor
+{
+    height: 100px;
+}
+
 a
 {
     text-decoration: none;
