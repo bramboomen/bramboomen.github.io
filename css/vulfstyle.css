@@ -22,6 +22,23 @@ a:hover
     color: #0000ff;
 }
 
+.list, .list2
+{
+    display: block;
+    margin-left: 0;
+    padding-top: 1em;
+}
+.list:before, .list2:before
+{
+    content: "-";
+    margin-left: calc(-2*0.5882em);
+}
+.list2
+{
+    padding-left: calc(2*0.5882em);
+}
+
+
 h1
 {
     font-size: 1em;
@@ -118,7 +135,7 @@ titel
 contentblock
 {
     display: block;
-    margin-left: calc(4*0.5882em);
+    margin-left: calc(3*0.5882em);
 }
 
 
