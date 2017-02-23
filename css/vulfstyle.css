@@ -28,23 +28,22 @@ a:hover
     margin-left: 0;
     padding-top: 1em;
 }
-.list:before, .list2:before
+.list:before, .list2:before, .list3:before
 {
-    content: "-";
+    content: "- ";
     margin-left: calc(-2*0.5882em);
 }
-.list2
+.list3, .list2
 {
     padding-left: calc(2*0.5882em);
 }
-
 
 h1
 {
     font-size: 1em;
     text-decoration: none;
     font-weight: normal;
-    padding-top: 4em;
+    padding-top: 3em;
 }
 
 h2, h3
