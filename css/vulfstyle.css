@@ -73,16 +73,16 @@ h2::after
     padding-right: 20px;
 }
 
-/***** header *****/ 
+/***** header *****/
 
 menu
 {
     padding: 0.5em 0 0 0;
     margin: 0;
     background: linear-gradient(
-        to bottom, 
-        rgba(255,255,255,1), 
-        rgba(255,255,255,1), 
+        to bottom,
+        rgba(255,255,255,1),
+        rgba(255,255,255,1),
         rgba(255,255,255,1),
         rgba(255,255,255,1),
         rgba(255,255,255,1),
@@ -196,7 +196,7 @@ contentblock
     width: calc(9*0.5882em);
     color: #f00;
     white-space: nowrap;
-    
+
 }
 
 .level
@@ -235,7 +235,7 @@ h4
 #outlook::after
 {    content:"@outlook.com";    }
 #uumail::after
-{    content:"@students.uu.nl";    }
+{    content:"@uu.nl";    }
 
 .email:hover
 {
@@ -244,25 +244,25 @@ h4
 }
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) 
+@media only screen and (max-width : 1200px)
 {
 
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) 
+@media only screen and (max-width : 992px)
 {
     body
-    {    
+    {
         margin-left: auto;
         margin-right: auto;
     }
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 690px) 
+@media only screen and (max-width : 690px)
 {
-    
+
     .wide
     {    display: none;    }
     .mid
@@ -271,30 +271,30 @@ h4
     {    display: none;    }
     .small
     {    display: none;    }
-    
+
     body
     {
         max-width: calc(45*0.5882em)
     }
-    
+
     h1::after, h1::before
     {
         content: "============================================";
         display: block;
     }
-    
+
     h2::after
     {
         content: "--------------------------------------------";
         display: block;
     }
-    
+
 }
 
 /* Small Devices, Phones */
-@media only screen and (max-width : 480px) 
+@media only screen and (max-width : 480px)
 {
-    
+
     a
     {    color: #00f;      }
     .wide
@@ -305,28 +305,28 @@ h4
     {    display: inline;  }
     .small
     {    display: none;    }
-    
+
     body
     {
         max-width: calc(38*0.5882em);
     }
-    
+
     h1::after, h1::before
     {
         content: "=====================================";
         display: block;
     }
-    
+
     h2::after
     {
         content: "-------------------------------------";
         display: block;
     }
-    
+
 }
 
-/* Superduper Small Devices, Smurfs */ 
-@media only screen and (max-width : 380px) 
+/* Superduper Small Devices, Smurfs */
+@media only screen and (max-width : 380px)
 {
 
     .wide
@@ -337,29 +337,29 @@ h4
     {    display: none;    }
     .small
     {    display: inline;  }
-    
+
     body
     {
         max-width: calc(33*0.5882em);
     }
-    
+
     h1::after, h1::before
     {
         content: "================================";
         display: block;
     }
-    
+
     h2::after
     {
         content: "--------------------------------";
         display: block;
     }
-    
+
     contentblock
     {
         margin-right: calc(2*0.5882em);
     }
-    
+
     .codetitle
     {
         margin-left: calc(2*0.5882em);
